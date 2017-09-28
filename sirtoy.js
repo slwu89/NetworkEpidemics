@@ -8,7 +8,7 @@ var running = 0;
 var p_SI = 0.2;
 var p_IR = 0.08;
 var p_RS = 0.015;
-var time_interval = 500;
+var time_interval = 250;
 var count = 0;
 var timeseries;
 
@@ -103,7 +103,6 @@ update_counters();
 $("#reset-button").click(reset_all);
 
 setInterval(run_SIR, time_interval);
-
 
 function run_SIR() {
 
