@@ -1,3 +1,48 @@
+//// city example
+//function example_city(){
+//    
+//  var world = new CAWorld({
+//      width:96,
+//      height:64,
+//      cellSize:6
+//  }); 
+//    
+//  world.palette = [
+//    '255, 255, 255, 1',
+//    '155, 155, 155, 1'  
+//  ];
+//    
+//  world.registerCellType('block',{
+//      getColor: function(){
+//        return this.open ? 0 : 1;
+//      },
+//      /* neighbors indices:
+//        0 : top left,
+//        1: top,
+//        2: top right,
+//        3: left,
+//        4: right,
+//        5: bottom left,
+//        6: bottom,
+//        7: bottom right
+//      */
+//      process: function(neighbors){
+//        if(neighbors[1].street || neighbors[3].street || neighbors[4].street || neighbors[6].street){
+//            this.street = true;
+//        }
+//      },
+//      reset: function(){
+//        this.wasStreet = this.street;
+//      }
+//    }, function(){ // init
+//      this.street = Math.random() > 0.25;
+//    };
+//  );
+//    
+//  return world;
+//};
+
+
 function example_caves() {
 
 	var world = new CAWorld({
