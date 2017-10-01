@@ -2,7 +2,7 @@
 <html>
  <head>
      <script src="https://cdn.jsdelivr.net/terra/latest/mainfile"></script>
- <title>CA in terra.js</title>
+ <title>Spatial Viral Evolution</title>
  </head>
 
 <body>
@@ -11,14 +11,6 @@
 
 <!--javascript bits-->
 <script type="text/javascript">
-
-
-//terra.registerCreature({
-//  type: 'bug',
-//  color: [120, 0, 240],
-//  sustainability: 6,
-//  reproduceLv: 1
-//});
 
 // the demo running at the top of this page
 //var bbTerrarium = new terra.Terrarium(100, 100);
@@ -30,7 +22,7 @@ var bbTerrarium = new terra.Terrarium(100, 100, {
 });
 
 terra.registerCreature({
-  type: 'plant',
+  type: 'Host',
   color: [0, 120, 0],
   size: 10,
   initialEnergy: 5,
@@ -53,8 +45,8 @@ terra.registerCreature({
 
 terra.registerCreature({
   type: 'bully',
-  color: [255, 51, 153],
-  initialEnergy: 50,
+  color: [241, 196, 15],
+  initialEnergy: 20,
   reproduceLv: 0.6,
   sustainability: 3
 });
